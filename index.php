@@ -18,7 +18,7 @@ include 'data.php';
 	<main>
 		<?php foreach($articles_to_display as $article) { ?>
 		<article class="card medium deep-purple darken-1 z-depth-5 hoverable" data-link=<?php echo $article->link; ?> >
-				<h5><?php echo substr($article->title, 0, 70) . "..."; ?></h5>
+				<h5><?php echo substr($article->title, 0, 50) . "..."; ?></h5>
 				<p class="flow-tex"><?php echo make_description_smaller($article->description)?></p>
 			</article>		
 		<?php } ?> 

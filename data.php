@@ -10,10 +10,6 @@ function make_description_smaller($description) {
         $cleanDesc = strip_tags($description);
         return substr($cleanDesc, 0, 250) . "...";
 }
-function make_title_smaller($title) {
-	$clean_title = strip_tags($title);
-	return substr($clean_title, 0, 100) . "...";
-}
 $feeds = [
         "https://css-tricks.com/feed/",
         "https://www.sitepoint.com/javascript/feed/",
